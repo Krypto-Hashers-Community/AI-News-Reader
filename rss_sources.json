@@ -1,0 +1,10 @@
+[
+    {
+        "name":"BBC News",
+        "link":"https://feeds.bbci.co.uk/news/rss.xml"
+    },
+    {
+        "name":"New York Times",
+        "link":"https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    }
+]
