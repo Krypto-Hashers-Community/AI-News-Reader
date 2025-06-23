@@ -19,7 +19,8 @@ class feed_processor:
             feed = feedparser.parse(link)
             for entry in feed.entries[:5]:
                 news = news_info(entry.title, name, self.extract_article_content(entry.link), entry.link, self.extract_first_media(entry), entry.published)
-                all_news.append(news)
+                if news.valid_fields():
+                    all_news.append(news)
         return all_news
 
 
